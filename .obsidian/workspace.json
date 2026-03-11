@@ -165,13 +165,23 @@
               "icon": "lucide-list",
               "title": "Outline of Untitled"
             }
+          },
+          {
+            "id": "c4f0b9b201798ab2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
