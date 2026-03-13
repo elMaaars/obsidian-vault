@@ -13,3 +13,6 @@
 		 - [ ] Testear procesamiento de datos.
 -  Propuesta:
 	- [ ] asdasd
+# Ideas/quotes
+- Relación conectividad funcional y estructural [[He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains#Intro|He2025]].
+- 
