@@ -12,7 +12,8 @@
 	 - [ ] Empezar procesamiento de datos:
 		 - [ ] Testear procesamiento de datos.
 -  Propuesta:
-	- [ ] asdasd
+	- [ ] Posible avance: Con datos HCP-A entrenar para género, pocos modelos, pocas validaciones. Hacerlo con regiones corticales y corticales+subcorticales. Análisis de resultados.
+-  
 # Ideas/quotes
 - Relación conectividad funcional y estructural [[He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains#Intro|He2025]].
 - 
