@@ -1,6 +1,8 @@
 # Roadmap
 -  Revisión de literatura
 	- [ ] Buscar información referente a uso de regiones subcorticales en trabajos similares.
+		- Schaefer atlas es solo cortical [[Schaefer2018 - Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI|Schaefer2018]]. Por ende, [[Shehzad2025 - Multiscale Graph Transformer for  Brain Disorder Diagnosis|Shehzad2025]] no incluye subcorticales. El trabajo de [[Liu2023 - Hierarchical Graph Convolutional Network Built by Multiscale Atlases for Brain Disorder Diagnosis Using Functional Connectivity|Liu2023]] es análogo.
+		- 
 	- [ ] *In progress* ... 
  -  Medidas de conectividad en grafos:
 	 - [ ] Revisar métricas respaldadas para usar (idealmente reducir el set de *features*)
@@ -16,4 +18,5 @@
 -  
 # Ideas/quotes
 - Relación conectividad funcional y estructural [[He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains#Intro|He2025]].
+- 
 - 
