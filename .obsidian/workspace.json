@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c0a5fedb7e141fe4",
+        "id": "3a011fbd469e859b",
         "type": "tabs",
         "children": [
           {
-            "id": "03bcb0fd2a890cbb",
+            "id": "7b33f002d499c709",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Shehzad2025 - Multiscale Graph Transformer for  Brain Disorder Diagnosis.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Shehzad2025 - Multiscale Graph Transformer for  Brain Disorder Diagnosis"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 200
   },
   "right": {
     "id": "f8fd5c579e8370b8",
@@ -163,48 +163,46 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5,
-    "collapsed": true
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Crear nueva base": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03bcb0fd2a890cbb",
+  "active": "7b33f002d499c709",
   "lastOpenFiles": [
-    "MCC - Tesis.md",
-    "He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains.md",
-    "Schaefer2018 - Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI.md",
-    "Younis2023 - Multimodal Age and Gender Estimation for Adaptive Human Robot Interaction A Systematic Literature Review.md",
-    "Hu2019 - Gender identification based on human brain structural MRI with a multilayer 3D convolution extreme learning machine.md",
-    "Tang2023 - A comprehensive survey of complex brain network representation.md",
-    "Liu2023 - Hierarchical Graph Convolutional Network Built by Multiscale Atlases for Brain Disorder Diagnosis Using Functional Connectivity.md",
-    "Cui2022 - BrainGB A Benchmark for Brain Network Analysis with Graph Neural Networks.md",
-    "Shehzad2025 - Multiscale Graph Transformer for  Brain Disorder Diagnosis.md",
-    "PapersLectura/multimodalHe2025.pdf",
     "PapersLectura/reviewXu2024.pdf",
-    "PapersLectura/reviewXu202.pdf",
-    "PapersLectura/s41746-024-01276-5.pdf",
-    "Sin título 1.md",
-    "Sin título.md",
-    "PapersLectura/s11682-025-01026-5.pdf",
+    "PapersLectura/multimodalHe2025.pdf",
+    "He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains.md",
+    "conflict-files-obsidian-git.md",
+    "MCC - Tesis.md",
+    "Tang2023 - A comprehensive survey of complex brain network representation.md",
+    "Shehzad2025 - Multiscale Graph Transformer for  Brain Disorder Diagnosis.md",
+    "PapersLectura/surveyTang2023.pdf",
+    "Schaefer2018 - Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI.md",
+    "Prieto2023 - Multiscale cortical parcellation based on geodesic distance and hierarchical clustering.md",
+    "Cui2022 - BrainGB A Benchmark for Brain Network Analysis with Graph Neural Networks.md",
+    "Zhang2017 - Functional connectivity predicts gender Evidence for gender differences in resting brain connectivity.md",
+    "Younis2023 - Multimodal Age and Gender Estimation for Adaptive Human Robot Interaction A Systematic Literature Review.md",
+    "RL/Shi2025 - Adaptive multi-player poker policy learning based on opponent style modeling.md",
+    "RL",
     "PapersLectura/Relacionados/journal.pbio.3002710.pdf",
     "PapersLectura/Viejos/Rubinov2010.pdf",
     "PapersLectura/Relacionados/ucalgary_2025_dibaji_seyedemahsa.pdf",
     "PapersLectura/Relacionados/fncom-18-1452457.pdf",
     "PapersLectura/Relacionados/s12021-016-9299-4.pdf",
-    "Zhang2017 - Functional connectivity predicts gender Evidence for gender differences in resting brain connectivity.md",
-    "Prieto2023 - Multiscale cortical parcellation based on geodesic distance and hierarchical clustering.md",
+    "PapersLectura/Relacionados/09-STS282.pdf",
+    "Hu2019 - Gender identification based on human brain structural MRI with a multilayer 3D convolution extreme learning machine.md",
+    "Liu2023 - Hierarchical Graph Convolutional Network Built by Multiscale Atlases for Brain Disorder Diagnosis Using Functional Connectivity.md",
     "Conceptos/PSL- PSL Regression.md",
-    "RL/Shi2025 - Adaptive multi-player poker policy learning based on opponent style modeling.md",
     "Literature review.md"
   ]
 }
