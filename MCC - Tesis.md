@@ -19,4 +19,4 @@
 # Ideas/quotes
 - Relación conectividad funcional y estructural [[He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains#Intro|He2025]].
 - Debido a la naturaleza multiescala, la inclusión de regiones subcortiales debe ser tratada con cuidado, pues utilizar un único atlas subcrotical simplemente incluye X cantidad de ROIs a la parcelación cortical de manera constante.
-- 
+-  asdasd
