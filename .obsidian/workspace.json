@@ -18,8 +18,23 @@
               "icon": "lucide-file-text",
               "title": "Rubinov2010"
             }
+          },
+          {
+            "id": "e5ee01dbe3249d24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Farahani2019 - Application of Graph Theory for Identifying Connectivity Patterns in Human Brain Networks A Systematic Review.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Farahani2019 - Application of Graph Theory for Identifying Connectivity Patterns in Human Brain Networks A Systematic Review"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,8 +181,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d300a1b73d35be8b",
+  "active": "e5ee01dbe3249d24",
   "lastOpenFiles": [
-    "MCC - Tesis.md"
+    "MCC - Tesis.md",
+    "Farahani2019 - Application of Graph Theory for Identifying Connectivity Patterns in Human Brain Networks A Systematic Review.md",
+    "PapersLectura/Viejos/Rubinov2010.pdf"
   ]
 }
