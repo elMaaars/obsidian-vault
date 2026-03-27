@@ -11,14 +11,12 @@
             "id": "d300a1b73d35be8b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "MCC - Tesis.md",
-                "mode": "source",
-                "source": false
+                "file": "PapersLectura/Viejos/Rubinov2010.pdf"
               },
-              "icon": "lucide-file",
-              "title": "MCC - Tesis"
+              "icon": "lucide-file-text",
+              "title": "Rubinov2010"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MCC - Tesis.md",
+                "file": "PapersLectura/Viejos/Rubinov2010.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for MCC - Tesis"
+              "title": "Backlinks for Rubinov2010"
             }
           },
           {
@@ -153,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,6 +166,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69a907c11dfcde5b",
-  "lastOpenFiles": []
+  "active": "d300a1b73d35be8b",
+  "lastOpenFiles": [
+    "MCC - Tesis.md"
+  ]
 }
