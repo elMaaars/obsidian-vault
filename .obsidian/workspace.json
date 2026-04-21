@@ -49,12 +49,14 @@
             "id": "e23db38536a086b0",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PapersLectura/multiscaleLiu2023.pdf"
+                "file": "MCC - Tesis.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "multiscaleLiu2023"
+              "icon": "lucide-file",
+              "title": "MCC - Tesis"
             }
           }
         ],
@@ -207,6 +209,7 @@
   },
   "active": "e23db38536a086b0",
   "lastOpenFiles": [
+    "PapersLectura/multiscaleLiu2023.pdf",
     "Hu2019 - Gender identification based on human brain structural MRI with a multilayer 3D convolution extreme learning machine.md",
     "PapersLectura/genderHu2019.pdf",
     "PapersLectura/brainGBCui2022.pdf",
@@ -218,7 +221,6 @@
     "Schaefer2018 - Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI.md",
     "Prieto2023 - Multiscale cortical parcellation based on geodesic distance and hierarchical clustering.md",
     "Farahani2019 - Application of Graph Theory for Identifying Connectivity Patterns in Human Brain Networks A Systematic Review.md",
-    "PapersLectura/multiscaleLiu2023.pdf",
     "PapersLectura/multimodalHe2025.pdf",
     "He2025 - Combining functional, structural, and morphological networks for multimodal classification of developing autistic brains.md",
     "PapersLectura/multiscaleShehzad2025.pdf",
