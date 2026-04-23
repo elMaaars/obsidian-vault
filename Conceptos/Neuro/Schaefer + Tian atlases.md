@@ -36,7 +36,8 @@
 3. Se multiplica por el volumen de cada vóxel (obtenido del header del NIfTI, e.g., 2 mm isótropo → 8 mm³ por vóxel).
 
 > [!note]+
-> **Nota técnica:** El cálculo de áreas por vértice es matemáticamente idéntico al que realiza `wb_command -surface-vertex-areas` de Connectome Workbench.
+> - **Nota técnica:** El cálculo de áreas por vértice es matemáticamente idéntico al que realiza `wb_command -surface-vertex-areas` de Connectome Workbench.
+> - **¿Por qué se necesitan las superficies de los sujetos?** El atlas de Schaefer solo indica qué vértices pertenecen a cada parcela, pero no cuánto mide cada vértice en mm². Todos los sujetos comparten la misma malla estándar, pero las coordenadas 3D de esos vértices varían según la anatomía individual de cada sujeto. Por lo tanto, el área real de cada triángulo, y por extensión de cada parcela, depende de la superficie específica del sujeto. Sin una superficie, solo se podrían contar vértices, lo cual asume que todos los vértices cubren la misma área, introduciendo un sesgo.
 
 **Pasos generales:**
 
