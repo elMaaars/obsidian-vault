@@ -1,7 +1,7 @@
 - Parcelación del atlas de Schaefer está disponible en formato CIFTI (más o menos como 2D).
 - Parcelación de Tian está disponible en formato NIfTI (volumen, 3D).
 
-**Eligiendo las parcelaciones para combinar**
+### Eligiendo las parcelaciones para combinar
 
 - Naturalmente, al tener muchas resoluciones para la parcelación de Schaefer, el tamaño de las parcelas se reduce conforme se hacen más divisiones.
 - Existen 10 escalas de Schaefer (100 a 1000 parcelas) y solo 4 para Tian (16, 32, 50, 54).
@@ -39,21 +39,21 @@
 > - **Nota técnica:** El cálculo de áreas por vértice es matemáticamente idéntico al que realiza `wb_command -surface-vertex-areas` de Connectome Workbench.
 > - **¿Por qué se necesitan las superficies de los sujetos?** El atlas de Schaefer solo indica qué vértices pertenecen a cada parcela, pero no cuánto mide cada vértice en mm². Todos los sujetos comparten la misma malla estándar, pero las coordenadas 3D de esos vértices varían según la anatomía individual de cada sujeto. Por lo tanto, el área real de cada triángulo, y por extensión de cada parcela, depende de la superficie específica del sujeto. Sin una superficie, solo se podrían contar vértices, lo cual asume que todos los vértices cubren la misma área, introduciendo un sesgo.
 
-**Pasos generales:**
+### Pasos generales
 
 1. Tomar la parcelación de Schaefer, unirla con la de Tian para generar una parcelación que incluya corteza y subcorteza.
 2. Usar esa parcelación para generar matrices de conectividad:
     1. En el caso estructural, usar eso para intersectar con las fibras (dMRI).
     2. En el caso funcional, usar eso para intersectar con las señales BOLD (rs-fMRI).
 
-**Consideraciones estructurales**
+#### Consideraciones estructurales
 
 - El proceso no es tan simple. Para la intersección de las fibras se requiere una parcelación volumétrica (para determinar por cuáles regiones pasan los streamlines).
 - Por lo tanto necesitamos que la parcelación Schaefer+Tian esté en formato NIfTI.
 - Para lograr esto tomamos los labels entregados por Schaefer y, junto a la imagen T1w del sujeto (que es un volumen), podemos generar un NIfTI para la parcelación cortical.
 - Ese NIfTI junto al NIfTI subcortical permiten construir un volumen parcelado del cerebro completo para usar con las fibras.
 
-**Consideraciones funcionales**
+#### Consideraciones funcionales
 
 - El proceso no es tan simple. Se necesita un archivo de etiquetas que unifique las etiquetas de Schaefer y de Tian (ambos a la resolución deseada).
 - Connectome Workbench (`wb_command`) tiene un comando capaz de hacer este trabajo. Igualmente, en el repositorio de Tian hay algunos merges ya realizados (100, 200 y 400 parcelas corticales combinadas con cada escala de Tian).
