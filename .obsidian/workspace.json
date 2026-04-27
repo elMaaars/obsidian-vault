@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceptos/Neuro/Schaefer + Tian atlases.md",
+                "file": "MCC - Tesis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Schaefer + Tian atlases"
+              "title": "MCC - Tesis"
             }
           }
         ],
@@ -223,6 +223,7 @@
   },
   "active": "b1e77717db12a483",
   "lastOpenFiles": [
+    "Conceptos/Neuro/Schaefer + Tian atlases.md",
     "Conceptos/PSL- PSL Regression.md",
     "Liu2023 - Hierarchical Graph Convolutional Network Built by Multiscale Atlases for Brain Disorder Diagnosis Using Functional Connectivity.md",
     "Hu2019 - Gender identification based on human brain structural MRI with a multilayer 3D convolution extreme learning machine.md",
@@ -236,7 +237,6 @@
     "Prieto2023 - Multiscale cortical parcellation based on geodesic distance and hierarchical clustering.md",
     "Farahani2019 - Application of Graph Theory for Identifying Connectivity Patterns in Human Brain Networks A Systematic Review.md",
     "Hafzalla2017 - A comparison of network definitions for detecting sex differences in brain connectivity using Support Vector Machines.md",
-    "Conceptos/Neuro/Schaefer + Tian atlases.md",
     "MCC - Tesis.md",
     "Untitled 1",
     "Conceptos/Neuro",
