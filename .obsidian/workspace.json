@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceptos/Neuro/Schaefer + Tian atlases.md",
+                "file": "Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Schaefer + Tian atlases"
+              "title": "Log"
             }
           }
         ]
@@ -170,11 +170,12 @@
   },
   "active": "b1e77717db12a483",
   "lastOpenFiles": [
+    "Conceptos/Neuro/GeoSP.md",
+    "Log.md",
+    "Conceptos/Neuro/Schaefer + Tian atlases.md",
     "MCC - Tesis.md",
     "PapersLectura/genderHu2019.pdf",
     "Hu2019 - Gender identification based on human brain structural MRI with a multilayer 3D convolution extreme learning machine.md",
-    "Conceptos/Neuro/GeoSP.md",
-    "Conceptos/Neuro/Schaefer + Tian atlases.md",
     "Conceptos/pipeline_summary.md",
     "Conceptos/PSL- PSL Regression.md",
     "Liu2023 - Hierarchical Graph Convolutional Network Built by Multiscale Atlases for Brain Disorder Diagnosis Using Functional Connectivity.md",
