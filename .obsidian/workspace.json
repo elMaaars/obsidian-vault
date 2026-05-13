@@ -18,8 +18,21 @@
               "icon": "lucide-file-text",
               "title": "fncom-18-1452457"
             }
+          },
+          {
+            "id": "1b7b40af4c838317",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,7 +188,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4013fa853267ce0a",
+  "active": "1b7b40af4c838317",
   "lastOpenFiles": [
     "PapersLectura/reviewSapuam2026.pdf",
     "PapersLectura/comparisonHafzalla2017.pdf",
