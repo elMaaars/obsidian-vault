@@ -1,6 +1,33 @@
 
+
+
+## May 12th 
+- Logramos hacer una proyección y unión con algo de sentido.
+	- Usando un tractograma disponible en el sujeto de prueba, corrí `tck2connectome` sin errores ni warnings para un sujeto de prueba con 216 regiones.
+	- Falta validación de Yarelis para hacerlo a gran escala.
+- Resumen general de los pasos:
+	1. Tomar el `.annot` correspondiente al sujeto en la parcelación correspondiente.
+	2. Ordenamos los *labels* para que queden secuenciales. 1000+ para LH y 2000+ para RH.
+	3. 
+## May 11th
+- Poco trabajo desde casa.
+- Seguí viendo lo de proyectar y unir. La respuesta parece estar en como se hace la proyección de Schaefer.
+- Con Claude tengo ahora un script que maneja toda la proyección y unión en un gran paso secuencial.
+## May 8th
+- Día solo en el laboratorio.
+- Trabajé en proyección y unión. 
+- En general casi nada funcionó. Uno de los principales obstáculos era el output de `mri_apar2aseg` de *FreeSurfer* pues para la proyección teníamos espacio de (256 x 256 x 256) isotrópico a 1mm, mientras que en HCP tenemos (227 x 272 x 227) isotrópico a 0.8mm.
+- Por eso intenté hacer la proyección con otros métodos (herramientas de *wb_command*) pero no hubieron buenos resultados.
+- Todos estos experimentos los hice sobre 3 sujetos de prueba que están en el disco **Elements 2**.
+- Además me di cuenta que la proyección de Schaefer guarda unos archivos en la carpeta `/label` de cada sujeto por lo que también hice un script para copiarlos en caso de tener que borarlos del disco.
 ## May 7th
-- En la mañana pude avanzar un poco con lo de la proyecc
+- En la mañana pude avanzar un poco con lo de la proyección. El resultado se veía bien pero escondía más de alguna pifia. Cuando lo vimos usando *FreeSurfer* en realidad lo que vi fueron las piezas por separado, pero tenía cargado el `aparc+aseg` (que tiene cortical y subcortical) por lo que realmente era un engaño.
+- Gracias a Seba me di cuenta que la proyección y sobre todo la unión no era tan sencilla. Luego conversando con Yarelis supe que hay que tener ojo con los labels para que luego se pueda usar en MRtrix3 para las matrices.
+- En la tarde tuve la reunión con las profes.
+	- Lo principal es que las resoluciones a usar son 216 **(200 corticales + 16 subcorticales)**, 532 **(500 corticales + 32 subcorticales)** y 850 **(800 corticales + 50 subcorticales)**.
+	- Esta idea viene de resultados previos de Yarelis que muestran que la máxima metaestabilidad del cerebro es a 400 parcelas.
+	- Respecto a la diferencia en la cantidad de parcelas por hemisferio se desestimó el efecto ya que el total si coincide.
+	- Pusieron foco en mencionar y tener bien claro cuales son los cambios al método GeoSP para tenerlo en la tesis. Explicar con detalle.
 ## May 6th
 - Terminé la adaptación del código subcortical.
 	- Me pasé los `aparc+aseg.nii.gz` desde los discos.
