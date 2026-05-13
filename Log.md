@@ -1,6 +1,6 @@
 
 ## May 7th
-- En la mañana p
+- En la mañana pude avanzar un poco con lo de la proyecc
 ## May 6th
 - Terminé la adaptación del código subcortical.
 	- Me pasé los `aparc+aseg.nii.gz` desde los discos.
