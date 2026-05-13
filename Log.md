@@ -1,4 +1,6 @@
 
+## May 7th
+- En la mañana p
 ## May 6th
 - Terminé la adaptación del código subcortical.
 	- Me pasé los `aparc+aseg.nii.gz` desde los discos.
