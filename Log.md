@@ -1,6 +1,13 @@
 
 
 
+## May 14th
+- Terminar documentación de pasos del algoritmo de proyección y unión. (Dos entradas atrás.)
+- Continuar con proyección de Schaefer para los datos del disco **Elements** en las escalas que no teníamos.
+## May 13th
+- Nada.
+- Documentación del algoritmo por acá. (Entrada anterior.)
+- Correr proyección de Schaefer para las escalas que no teníamos (500 y 800) para el disco **Elements 2**.
 ## May 12th 
 - Logramos hacer una proyección y unión con algo de sentido.
 	- Usando un tractograma disponible en el sujeto de prueba, corrí `tck2connectome` sin errores ni warnings para un sujeto de prueba con 216 regiones.
@@ -14,7 +21,9 @@
 	6. Como mencionaba antes, el problema de la unión es que ambos volumenes no comparten espacio, por lo que hay que llevar el volumen cortical al espacio de HCP. Para eso usamos `mri_vol2vol --regheader` que encuentra la transformación requerida (usando los *headers* de los volumenes) y luego hace el *resampling* a espacio HCP usando *nearest neighbour interpolation*. 
 	7. Cargar los volumenes y verificamos dimensión.
 	8. Reemplazamos las etiquetas subcorticales del volumen cortical asignadas por FreeSurfer (`mri_apar2aseg` produce una segmentación cerebral completa) a las generadas por el algoritmo subcortical. Usamos las etiquetas 3000+ y reasignamos los vóxeles. **El código subcortical tuvo que cambiarse a asignar una etiqueta nueva a todas las regiones, antes era solo a las que se dividían.** 
-	9. Guardamos el volumen nuevo. Par el caso de 216 parcelas totales tenemos, 96 en el hemisferio izquierdo (desde 1001 hasta 1096), 104 en el hemisferio derecho (desde 2001 hasta 2104) y 16 sub
+	9. Guardamos el volumen nuevo. Par el caso de 216 parcelas totales tenemos, 96 en el hemisferio izquierdo (desde 1001 hasta 1096), 104 en el hemisferio derecho (desde 2001 hasta 2104) y 16 subcorticales (3001 hasta 3017).
+		- **LA DIVISIÓN Y REASIGNACIÓN DE LABELS EN EL PASO SUBCORTICAL PUEDE DEJAR GAPS.**
+	10. Preparación para `tck2connectome`. Este requiere que las *labels* sean secuenciales comenzando desde 1 y todo lo que no sea WM que sea 0. Se hace un remapeo de todas las parcelas a el rango corrrecto. Para 216, queda desde 1 hasta 216. Como extra se generan un `.txt` y un `.json` que mapean las nuevas *labels* secuenciales a las antiguas, junto con el hemisferio y el tipo.
 ## May 11th
 - Poco trabajo desde casa.
 - Seguí viendo lo de proyectar y unir. La respuesta parece estar en como se hace la proyección de Schaefer.
