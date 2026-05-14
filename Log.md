@@ -4,6 +4,10 @@
 ## May 14th
 - Terminar documentación de pasos del algoritmo de proyección y unión. (Dos entradas atrás.)
 - Continuar con proyección de Schaefer para los datos del disco **Elements** en las escalas que no teníamos.
+- Reunión con Yarelis para ver resultados de proyección y unión.
+	- Colores hacen difícil la apreciación de las diferentes parcelas, incluso en el nivel de 200, por lo que con niveles superiores va a ser más complejo.
+	- Hacer experimento de recrear Desikan. Si cortamos el árbol a 68 regiones corticales, deberíamos obtener 34 por lado (tal como DK) y juntando con 7 subcorticales por lado, tendríamos Desikan. Si al visualzar esto se corresponde con DK entonces está bien.
+	- Debería funcionar.
 ## May 13th
 - Nada.
 - Documentación del algoritmo por acá. (Entrada anterior.)
