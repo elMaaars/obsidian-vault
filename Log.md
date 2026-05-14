@@ -8,7 +8,10 @@
 - Resumen general de los pasos:
 	1. Tomar el `.annot` correspondiente al sujeto en la parcelación correspondiente.
 	2. Ordenamos los *labels* para que queden secuenciales. 1000+ para LH y 2000+ para RH.
-	3. 
+	3. Resampliong para*FreeSurfer* (que necesita los datos en espacio nativo). Mediante un KDTree podemos pasar de 32k a espacio nativo sin mayor problema ya que ambas superficiees existen en espacio de coordenadas (**checkeado**).
+	4. Guardamos el `multiscale.annot` para usarlo y tenerlo de respaldo.  **Esto se escribe en el disco externo y en multiples escalas se va a sobreescribir. Requiere parche.** 
+	5. Usamos `mri_aparc2aseg` que toma el output del paso anterior y pinta. El resultado es un volumen 256 x 256 x 256 isotrópico a 1mm (el espacio de FreeSurfer).
+	6. Como mencionaba antes, el problema de la unión es que ambos volumenes no comparten espacio, por lo que hay que llevar el volumen cortical al espacio de HCP.
 ## May 11th
 - Poco trabajo desde casa.
 - Seguí viendo lo de proyectar y unir. La respuesta parece estar en como se hace la proyección de Schaefer.
