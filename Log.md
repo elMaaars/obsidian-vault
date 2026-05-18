@@ -2,6 +2,22 @@
 
 
 ## May 18th
+- Resumen de procesamientos del fin de semana:
+	- Viernes noche dejé sujetos procesando a nivel 200.
+		- Rutas estaban malas. No corrió y me di cuenta tarde.
+	- Sábado arreglé rutas y corrí mismo nivel.
+		- Falló primero por `midthickness` que estaban con data duplicada. Solución fue usar las versiones recortadas que ya habíamos generado en un inicio del proyecto.
+		- Luego funcionó sin problema hasta que se llenó el disco. El pipeline usa `mri_aparc2aseg` y eso genera un `.annot`en el disco como residuo. 
+	- Domingo me di cuenta del disco lleno. Llegamos hasta el sujeto 622.
+- Reu con la profe Ceci en la mañana.
+	- Resumen de lo que he estado haciendo.
+	- Sugirió tener una medida más tangible para la similitud en la reconstrucción de Desikan. *We'll check on that later.*
+	- También comentó realizar pruebas con un subconjunto de los datos para asegurarnos que tenemos los datos necesarios para cualquier cosa (AKA. volver desde la parcelación a las regiones de Desikan).
+- Pipeline arreglado para eliminación automática de los `.annot` asegurando espacio en los discos para procesamiento continuo.
+- Con Seba conversamos un poco sobre la proyección y unión.
+	- De acuerdo con lo que dice deberían existir dos `aparc+aseg` uno en espacio nativo (HCP) y el otro en espacio *conformed* (FreeSurfer). De todas formas la transformación del volumen cortical al espacio nativo no es incorrecta. Mencionó que el tipo de interpolación es clave, actualmente usamos *nearest neighbour* pero lo ideal sería *multilabel*.
+	- Con respecto a lo de la reconstrucción de Desikan, Seba sugurió usar un Dice Score entre la reconstrucción y el original.
+		- Esto se debe hacer posteriormente para cada sujeto, con el de prueba se obtiene un 97 de promedio, con 2 regiones obteniendo un 92. Otras alcanzan el 99.
 - 
 ## May 15th
 - Terminamos la proyección de Sachefer para todos los sujetos que faltaban en los niveles que faltaban.
