@@ -1,11 +1,15 @@
 
 
 
+# May 20th
+-  Los sujetos del nivel 500 fallaron. Faltaron cerca de 200.
+	- La solución para borrar los `.annot` tenía mal el nombre del archivo. Ya está arreglado.
+- Hice un *script* (fue Claude) para el procesamiento de las funcionales con las señales y los volumenes obtenidos de la proyección y unión. Está basado en el *script* que usó la Cata anteriormente.
+	- 
 ## May 19th
 - Terminaron los sujetos faltantes del nivel 200.
 - Empezamos con el nivel 500.
-	- Spoiler: falló por una pifia en el lugar. Ya está corregido. En tanto termine continuamos con los conectomas.
-- Hice (*Claude*) un scr
+- Corregí la introducción de la propuesta y empecé correcciones al marco teórico.
 ## May 18th
 - Resumen de procesamientos del fin de semana:
 	- Viernes noche dejé sujetos procesando a nivel 200.
