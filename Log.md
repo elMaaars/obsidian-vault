@@ -1,6 +1,10 @@
 
 
 
+## May 19th
+- Terminaron los sujetos faltantes del nivel 200.
+- Empezamos con el nivel 500.
+	- Spoiler: falló por una pifia en el lugar
 ## May 18th
 - Resumen de procesamientos del fin de semana:
 	- Viernes noche dejé sujetos procesando a nivel 200.
