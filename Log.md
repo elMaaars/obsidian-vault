@@ -10,6 +10,10 @@
 	- Sacamos las series de tiempo para cada parcela, teniendo una señal temporal representativa de cada región. Se usa el promedio para esta señal representativa.
 	- Usamos correlación de Pearson y transformada de Fisher, dejando coeficientes entre -1 y 1.
 	- Guardamos en `.csv`  y en `.npy` para uso posterior.
+- Respecto a los espacios funcionales-estructurales:
+	- El conectoma estructural está enteramente en el espacio del nativo del sujeto (el de HCP). La imágen de fMRI está en espacio MNI por lo que no se puede hacer exactamente lo mismo. Por eso llevamos el volumen del cerebro completo a MNI.
+	- A pesar de eso, las matrices y sus indices son perfectamente comparables, lo que quiere la conexión entre $S_i$ , $S_j$ es la misma que en la $F_i$, $F_j$, con *S* la matriz estructural y *F*  la funcional.
+	- 
 ## May 19th
 - Terminaron los sujetos faltantes del nivel 200.
 - Empezamos con el nivel 500.
