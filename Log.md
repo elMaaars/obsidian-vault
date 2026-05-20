@@ -4,8 +4,12 @@
 # May 20th
 -  Los sujetos del nivel 500 fallaron. Faltaron cerca de 200.
 	- La solución para borrar los `.annot` tenía mal el nombre del archivo. Ya está arreglado.
-- Hice un *script* (fue Claude) para el procesamiento de las funcionales con las señales y los volumenes obtenidos de la proyección y unión. Está basado en el *script* que usó la Cata anteriormente.
-	- 
+- Hice un *script* (fue Claude) para el procesamiento de las funcionales con las señales y los volumenes obtenidos de la proyección y unión. Está basado en el *script* que usó la Cata anteriormente. Funciona así:
+	- Primero hacemos una transformación del volumen a MNI (91x109x91) que es espacio de los datos funcionales. Volvemos a usar interpolación *nearest neighbour*.
+	- Luego cargamoslos volúmenes y verificamos dimensiones luego de transformar.
+	- Sacamos las series de tiempo para cada parcela, teniendo una señal temporal representativa de cada región. Se usa el promedio para esta señal representativa.
+	- Usamos correlación de Pearson y transformada de Fisher, dejando coeficientes entre -1 y 1.
+	- Guardamos en `.csv`  y en `.npy` para uso posterior.
 ## May 19th
 - Terminaron los sujetos faltantes del nivel 200.
 - Empezamos con el nivel 500.
