@@ -1,19 +1,31 @@
 
 
 
-# May 20th
+## May 22th
+- Las intersecciones de los sujetos del nivel 500 terminaron.
+- Las matrices funcionales en el nivel 200 fallaron para 294 sujetos.
+	- El error es que faltaba un directorio en la lista a revisar para encotrar las imagenes volumetricas de fMRI. De esos 294, hay 291 sujetos con datos. Existen 3 con datos faltantes o incompletos.
+	- Hay que aceptar la pérdida.
+	- Si bien están los archivos en formato `CIFTI` para todos, se requiere de una reconstrucción del pipeline un poco profunda, cambiando otros resultados y perdiendo consistencia con el método estructural.
+	- La explicación más técnica es: 
+		- GeoSP termina con un volumen de cerebro completo. El formato `CIFTI` (que son los datos pero en su equivalente de superficie) necesita cierta organización específica que no le estamos dando ahora a los datos.
+		- En el método actual "rompemos" el "orden" en las estructuras subcorticales al dividirlas. Para que funciona necesitamos un archivo `.dlabel` (**esto lo mencionó la Cata)**. Además las divisiones son especificas por sujeto, por lo que si bien, es posible crear el `.dlabel` es mucho más engorroso. Incluso si lo intentamos, rompemos la correspondencia entre las matrices funcinoales y estructurales.
+## May 20th
 -  Los sujetos del nivel 500 fallaron. Faltaron cerca de 200.
 	- La solución para borrar los `.annot` tenía mal el nombre del archivo. Ya está arreglado.
 - Hice un *script* (fue Claude) para el procesamiento de las funcionales con las señales y los volumenes obtenidos de la proyección y unión. Está basado en el *script* que usó la Cata anteriormente. Funciona así:
 	- Primero hacemos una transformación del volumen a MNI (91x109x91) que es espacio de los datos funcionales. Volvemos a usar interpolación *nearest neighbour*.
-	- Luego cargamoslos volúmenes y verificamos dimensiones luego de transformar.
+	- Luego cargamos los volúmenes y verificamos dimensiones luego de transformar.
 	- Sacamos las series de tiempo para cada parcela, teniendo una señal temporal representativa de cada región. Se usa el promedio para esta señal representativa.
 	- Usamos correlación de Pearson y transformada de Fisher, dejando coeficientes entre -1 y 1.
 	- Guardamos en `.csv`  y en `.npy` para uso posterior.
 - Respecto a los espacios funcionales-estructurales:
 	- El conectoma estructural está enteramente en el espacio del nativo del sujeto (el de HCP). La imágen de fMRI está en espacio MNI por lo que no se puede hacer exactamente lo mismo. Por eso llevamos el volumen del cerebro completo a MNI.
 	- A pesar de eso, las matrices y sus indices son perfectamente comparables, lo que quiere la conexión entre $S_i$ , $S_j$ es la misma que en la $F_i$, $F_j$, con *S* la matriz estructural y *F*  la funcional.
-	- 
+- Me econtré con la profe durante la mañana:
+	- Encontró que el avance estaba bien para la propuesta. Quiere que esté lista (borrador) para la mitad de junio.
+	- Dice que con los datos estructurales ya es suficiente para diseñar *pipelines* y hacer trabajo para SIPAIM.
+- Al final del día terminaron los sujetos faltantes del nivel 500.
 ## May 19th
 - Terminaron los sujetos faltantes del nivel 200.
 - Empezamos con el nivel 500.
