@@ -1,6 +1,18 @@
 
 
 
+## May 25th
+- Tenemos todas las matrices estructurales para GeoSP.
+- Están terminando las funcionales para GeoSP también.
+- Esta semana hay que trabajar en las de Schaefer y en la propuesta.
+- Con el resumen de Claude he estado aplicando correcciones.
+	- Puso mucho enfásis en secciones que requieren más desarrollo lo que me parece bien.
+- Tuve reunión con la profe Ceci:
+	- Cree que vamos bien.
+	- Planteó usar todo el universo de medidas topológicas, luego filtrar.
+	- Ideal sería luego de tener las más relevantes hacer análisis por zona en todos los sujetos. Buscar significancia de los resultados.
+	- Aprueba el diseño ablativo.
+	- Dice que hay que tener ojo con la hipótesis y hacer una metodología que esté en la misma linea.
 ## May 22th
 - Las intersecciones de los sujetos del nivel 500 terminaron.
 - Las matrices funcionales en el nivel 200 fallaron para 294 sujetos.
