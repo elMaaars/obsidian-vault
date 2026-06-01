@@ -1,6 +1,24 @@
 
 
 
+
+## May 27th
+- Para la propuesta:
+	- Organicé mejor el SOTA, incluyo dos trabajos nuevos y tiene más sentido (uno de los trabajos soy yo!).
+	- Empecé a delinear avances y apliqué otras correciones menores.
+- Instalé matlab y brainstorm.
+- Poco más.
+## May 26th
+- Terminaron las funcionales de GeoSP.
+- Avances con lo de Schaefer.
+- Hay opciones, ir con Brainstorm o hacer un pipeline de FSL.
+- Revisé las densidades, están en 55%, 32% y 20% para los niveles 200, 500 y 800. FC están todas a 100%.
+- Hay que hacer umbralización, la pregunta es cómo:
+	- Opción 1: Umbral fijo.
+	- Opción 2: Umbral porcentual.
+	- Opción 3: Umbral procentual basado en población.
+	- OJO: Yarelis tenía densidades demasiado altas, incluso en 1000 nodos, puede ser la cantidad de fibras.
+- Eso no más, no mucho.
 ## May 25th
 - Tenemos todas las matrices estructurales para GeoSP.
 - Están terminando las funcionales para GeoSP también.
