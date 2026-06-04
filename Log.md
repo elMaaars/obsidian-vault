@@ -2,6 +2,38 @@
 
 
 
+## June 1st
+- Reu con la profe en la mañana:
+	- Volumenes listos, esta semana se sacan todos los datos!!
+	- Profe pidio validación de que datos están bien.
+	- Intentar hacer pipeline minimo para validar. 
+	- Testear tiempo de métricas con pocos sujetos.
+	- Pensar en como hacer análisis de edad también.
+	- Revisar metodología.
+- Volviendo al asunto de las densidades:
+	- Yarelis dice que son 3 millones pero que tiene que confirmar.
+	- De todas maneras no le parece extraño. Dijo revisara la suma de las fibras en un sujeto sin normalización por inverso del volumen. Se pierde casi la mitad de las fibras.
+	- Jorge dijo que podía estar desalineado. 
+	- Revisamos en mriview con el volumen y la tractografía y están bien.
+- Probé el pipeline de extracción con un sujeto de 850 de parcelación.
+	- Extraje 24 métricas en 15 segundos.
+- Terminé sección de GeoSP en avances. Tentativamente.
+- Ahora veo sección de decidir las escalas.
+- También reorganicé las carpetas. Schaefer estaba muy desordenado.
+## May 29th
+- Resulta que hay diferencias entre brainstorm y FSL.
+	- Tuve que hacer 10 sujetos de prueba y comparar con el volúmen del sujeto de HCP.
+	- FSL es mejor.
+	- Ahora si terminamos los volumenes.
+- Me di cuenta que al ver en `freeview` faltaban trozos de la corteza y estaba todo mal etiquetado.
+	- Con Seba me puse a ver y era el LUT default del software.
+	- Hice LUT custom y quedó bien.
+- Continué con la propuesta, lentamente.
+## May 28th
+- Avances de la propuesta.
+- Capítulo de avances ahora tiene estructura y comencé escribir lo que hicimos para GeoSP.
+- Eso principalmente.
+- Hice unión de volumenes para niveles 1 y 2.
 ## May 27th
 - Para la propuesta:
 	- Organicé mejor el SOTA, incluyo dos trabajos nuevos y tiene más sentido (uno de los trabajos soy yo!).
