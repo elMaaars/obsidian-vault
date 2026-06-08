@@ -1,7 +1,27 @@
-
-
-
-
+## June 4th
+- Propuesta principalmente, conectividad y SchaeferTian en el escrito.
+- Arreglé citas, pusé pipeline de la memoria como imagen.
+- Además comparé densidades en SC para GeoSP y SchaeferTian:
+`````
+parcellation level  count  mean_%  std_%  min_%  max_%                           
+GeoSP        200    720.0   55.56   7.76  19.06  68.04
+             500    720.0   31.85   5.26  10.14  40.94
+             800    720.0   20.88   3.58   6.76  26.51
+SchaeferTian 200    720.0   58.68   8.36  18.39  71.61
+             500    720.0   32.06   5.26   9.83  40.85
+             800    720.0   21.26   3.61   6.85  27.43
+`````
+- Son similares por lo que debe estar bien, dos fuentes diferentes, densidades similares.
+- Ahora están corriendo los FC en Tian 200. 
+- En la noche empiezan los Tian 500 y para el viernes en la noche están los finales.
+## June 3th
+- Nada, descanso en casa.
+- *Psych*, escribí como 1 parrafo y una imagen en la propuesta. (Tian S1 y S2, MarcoTeórico).
+- Pipeline de fMRI para Schaefer estaba problemático.
+	- Se hacía una conversión de MNI a nativo para SC, pero después para FC había que ir de vuelta a MNI.
+	- Eso rompía algunas cosas.
+	- Solución, quedarse en MNI para FC.
+## June 2st
 ## June 1st
 - Reu con la profe en la mañana:
 	- Volumenes listos, esta semana se sacan todos los datos!!
