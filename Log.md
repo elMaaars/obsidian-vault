@@ -1,3 +1,18 @@
+## June 8th
+- Peleando todo el día con visualizar un sujeto en las 3 escalas.
+- Al final lo hago con `mrview`, cargo el `.nodes.nii.gz` junto con el LUT y un .obj generado con `label2mesh`. Hay que cargar una imagen también!!!!
+- Al fin tengo las imagenes. 
+- También corregí las desalineaciones para todos los de SchaeferTian. EL problema eran las estructurales.
+- En lo respectivo a los NaNs, eran señales que "no estaban", pero no pasaban como 0s sino como NaNs lo que es bueno.
+- Poco avance.
+## June 5th
+- Terminados los SchaeferTian.
+- Todos los datos listos!
+- Hay unos misalignments que hay que corregir. 
+- Además se pasan unos NaNs en el proceso, pero parece que son 0s.
+- Revisr en detalle.
+- Avances con propuesta, sección Avances casi lista *badum tss*.
+- Faltan imagenes.
 ## June 4th
 - Propuesta principalmente, conectividad y SchaeferTian en el escrito.
 - Arreglé citas, pusé pipeline de la memoria como imagen.
