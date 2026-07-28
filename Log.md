@@ -1,3 +1,24 @@
+## July 28th
+- Long time no see.
+- Bueno, resumen y al punto:
+	- SIPAIM paper listo.
+	- AC3E abstract para poster listo.
+	- Nos cambiamos a XGBoost como modelo.
+	- Usamos features basadas en Yeo7 en GeoSP para SIPAIM.
+- Ahora lo importante y que merece ser documentado
+`````
+subject_set  n_subjects  n_folds  bacc_mean  bacc_std
+       full         718        8   0.812481  0.039214
+  no_age100         706        8   0.814369  0.033334
+no_outliers         707        8   0.823443  0.029689
+
+set_a  set_b  bacc_mean_a  bacc_mean_b  wilcoxon_stat  p_value  significant_p05
+full   no_age100  0.812481  0.814369    15.0  0.742188   False
+full   no_outlrs  0.812481  0.823443     8.0  0.195312   False
+no_100 no_outlrs  0.814369  0.823443    11.0  0.382812   False
+
+`````
+- Lo relevante de esto es que no hay diferencias significativas (dentro de lo que cabe obviamente, con los *folds* que hacemos) al remover el grupo de sujetos marcados como de 100 años. 
 ## June 8th
 - Peleando todo el día con visualizar un sujeto en las 3 escalas.
 - Al final lo hago con `mrview`, cargo el `.nodes.nii.gz` junto con el LUT y un .obj generado con `label2mesh`. Hay que cargar una imagen también!!!!
